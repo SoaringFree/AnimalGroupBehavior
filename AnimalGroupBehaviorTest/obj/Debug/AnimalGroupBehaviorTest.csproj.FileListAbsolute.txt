@@ -1,0 +1,7 @@
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\obj\Debug\AnimalGroupBehaviorTest.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\bin\Debug\AnimalGroupBehaviorTest.dll
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\bin\Debug\AnimalGroupBehaviorTest.pdb
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\bin\Debug\AnimalGroupBehavior.exe
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\bin\Debug\AnimalGroupBehavior.pdb
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\obj\Debug\AnimalGroupBehaviorTest.dll
+D:\Program Files (x86)\Microsoft Visual Studio 12.0\Workplace\mianshi\AnimalGroupBehavior\AnimalGroupBehaviorTest\obj\Debug\AnimalGroupBehaviorTest.pdb
