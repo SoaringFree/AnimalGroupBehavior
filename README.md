@@ -87,7 +87,7 @@ Conflict found at dcfa0c7a-5855-4ed2-bc8c-4accae8bd155
 ## 解题思路
 ### 输入
 对 historyData 做简单处理，每一行末尾添加 \\n 换行，每一块数据区域后添加 \\n 作为结束标志，如：<br/>
-```
+```C#
 string data = "e4e87cb2-8e9a-4749-abb6-26c59344dfee\n" +
                 "2016/09/02 22:30:46\n" +
                 "cat1 10 9\n\n" +
@@ -99,11 +99,11 @@ string data = "e4e87cb2-8e9a-4749-abb6-26c59344dfee\n" +
 
 ### 输入验证
 对于全局唯一的 Id，使用正则表达式匹配：<br />
-```
+```C#
 string guidRegex = @"^[A-Za-z0-9]{8}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{12}$";
 ```
 对于时间，首先使用正则表达式匹配格式，然后使用内建方法验证合法性：<br/>
-```
+```C#
 string datetimeRegex = @"^\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}$";
 ```
 对于动物坐标信息，则先以空格分割，判断其长度为 3 或 5，然后进行相应的验证。
@@ -140,49 +140,49 @@ string datetimeRegex = @"^\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}$";
 <a name="AnimalGroupInfo"></a>
 ### AnimalGroupInfo
 * AnimalStatusList：动物群体状态数据，即全部数据。
-```
+```C#
 private List<AnimalStatus> AnimalStatusList;
 ```
 
 * AnimalSnapshoot：动物群体最新时刻快照。
-```
+```C#
 private AnimalStatus AnimalSnapshoot;
 ```
 
 * GetSnapShot：题目要求实现方法，功能略。
-```
+```C#
 public string GetSnapShot(string historyData, string id)
 ```
 
 * GetSnapShotByGUID：根据输入全局ID，获取该时刻的动物群体快照。该方法仅在上一方法执行后有效，即必须先输入 historyData 信息。
-```
+```C#
 public string GetSnapShotByGUID(string guid)
 ```
 
 * UpdateSnapshoot：更新某一时刻动物群体快照。每次读入数据时均执行方法，可以避免在获取快照信息时对全部数据进行扫描。
-```
+```C#
 private bool UpdateSnapshoot(AnimalStatus status, out string errorInfo)
 ```
 
 * PrintSnapshoot：打印动物群体快照信息，并返回题目要求格式的字符串。
-```
+```C#
 private string PrintSnapshoot(AnimalStatus snapshoot)
 ```
 
 <a name="Util"></a>
 ### Util
 * TryVerifyGUID：验证 GUID 是否有效。
-```
+```C#
 public static bool TryVerifyGUID(string guid)
 ```
 
 * TryVerifyDateTime：验证日期格式字符串是否正确。
-```
+```C#
 public static bool TryVerifyDateTime(string dtstr, out DateTime datatime )
 ```
 
 * TryVerifyCoordinate：验证动物坐标数据是否正确。
-```
+```C#
 public static bool TryVerifyCoordinate(string costr, ref AnimalCoordinate coordinate)
 ```
 
@@ -207,6 +207,7 @@ public static bool TryVerifyCoordinate(string costr, ref AnimalCoordinate coordi
 
 <a name="源码下载"></a>
 ## 源码下载
+源码下载地址：<https://github.com/SoaringFree/AnimalGroupBehavior.git>
 
 <a name="其他"></a>
 ## 其他
